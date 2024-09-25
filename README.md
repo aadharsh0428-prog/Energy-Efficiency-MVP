@@ -69,7 +69,7 @@ Ensure that you have the following installed:
     ```
 
 4. **Access the app**:
-    Once the app is running, open your browser and navigate to `http://localhost:8501`. The home page will provide background information on energy efficiency and renovation opportunities in Germany. You can then navigate to the MVP page to upload a CSV file for predictions.
+    Once the app is running, open your browser and navigate to `http://localhost:8501`. The home page will provide background information on energy efficiency and renovation opportunities in Germany. You can then navigate to the MVP page to upload the CSV file in the repository for predictions.
 
 ### CSV File Format
 
