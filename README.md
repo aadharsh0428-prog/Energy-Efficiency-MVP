@@ -71,16 +71,26 @@ Ensure that you have the following installed:
 4. **Access the app**:
     Once the app is running, open your browser and navigate to `http://localhost:8501`. The home page will provide background information on energy efficiency and renovation opportunities in Germany. You can then navigate to the MVP page to upload the CSV file in the repository for predictions.
 
-### CSV File Format
+## Data Points and Their Meaning
+Below is a description of each data point that the model uses for predictions:
 
-The CSV file you upload should contain at least the following columns:
-
-- `id`: A unique identifier for each building.
-- `building_renovation_percent`: The target variable representing the percentage of building renovation needed.
-- Additional columns for features relevant to energy efficiency and building renovation, such as:
-  - Energy consumption metrics (`energy_consumption_kwh`, `energy_market_eur_kwh`, etc.)
-  - Building characteristics (`building_stock_characteristics`, `building_shell_performance`, etc.)
-  - Environmental factors (`solar_radiation_kwh_m2`, `climatic_conditions`, etc.)
+- **energy_consumption_kwh**: Total energy consumed by the building in kilowatt-hours (kWh).
+- **energy_poverty_percent**: Percentage of households in the building classified as energy-poor, struggling to afford energy costs.
+- **energy_market_eur_kwh**: The market price of energy in euros per kilowatt-hour.
+- **building_stock_characteristics**: The overall characteristics of the building, including age, type, and materials used.
+- **building_renovation_percent**: The percentage of the building that requires renovation to meet energy efficiency standards (target variable).
+- **building_shell_performance**: The performance of the building's exterior (walls, windows, etc.) in terms of energy efficiency.
+- **technical_building_systems**: The efficiency and quality of systems like HVAC, plumbing, and electrical infrastructure in the building.
+- **epc_energy_performance_certificate**: The building's energy performance rating, typically provided by an Energy Performance Certificate (EPC).
+- **other_labelling_schemes**: Other energy-related labels or certifications that the building holds.
+- **financing_eur**: The total amount of financing or funding (in euros) available or allocated for the building’s renovation or energy efficiency improvements.
+- **comfort_scale**: A subjective rating of the building’s overall comfort level, on a defined scale.
+- **indoor_air_quality_scale**: A subjective or measured rating of the indoor air quality within the building.
+- **natural_lighting_scale**: A rating of the building’s access to and use of natural lighting.
+- **co2_emission_kg**: Total CO2 emissions produced by the building, measured in kilograms.
+- **climatic_conditions**: A categorical rating or index representing the local climate and its effect on the building’s energy needs.
+- **solar_radiation_kwh_m2**: The amount of solar radiation received by the building, measured in kilowatt-hours per square meter.
+- **loading_stations_count**: The number of electric vehicle charging or loading stations available at the building site.
 
 ### Example Workflow
 
